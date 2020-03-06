@@ -3,7 +3,7 @@
         <form id="registrationForm">
       <div class="form-class">
         <h2>EMPLOYEE REGISTRATION</h2>
-        <!-- {{redata}} -->
+
         <div class="labels">
           <label>First Name</label>
         </div>
@@ -92,43 +92,16 @@
     </div>
 </template>
 <script>
-// import { bus } from '../main.js'
-// import {Countries} from "./constants.js"
 export default {
-    name: "Registration",
-  //    props:{
-  //    redata: Object
-  //  },
+  name: "Registration",
   computed:{
     empObj(){
       return this.$store.state.empObj 
     }
   },
   methods:{
-    //   resetForm() {
-    //   document.getElementById("registrationForm").reset();
-    //   this.resetPreview();
-    // },
-    // resetPreview() {
-    //    // alert("reset")
-    //   this.firstname = "",
-    //     this.lastname = "",
-    //     this.email = "",
-    //     this.dob = "",
-    //     this.mobile = "",
-    //     this.gender = "",
-    //     this.state = "",
-    //     this.country = "",
-    //     this.hobbies = [],
-    //     this.address = "";
-    // },
-    
     getStates() {
-      // var x = Countries.find(x => x.country == this.country);
-      // this.$store.state.stateObj = x.states;
-     // console.log('1')
       this.$store.dispatch('getStates');
-      //console.log('9')
     },
     resetForm(){
       this.$store.dispatch('reset');

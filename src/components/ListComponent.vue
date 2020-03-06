@@ -12,7 +12,6 @@
         <th>Hobbies</th>
         <th>Address</th>
       </tr>
-
       <tr v-for="ledata in ledata_list" :key="ledata.firstname">
         <td>{{ledata.firstname}} {{ledata.lastname}}</td>
         <td>{{ledata.email}}</td>

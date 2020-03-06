@@ -6,8 +6,6 @@ import store from './store/store'
 Vue.use(Vuex);
 
 Vue.config.productionTip = false
-
-
 new Vue({
   render: h => h(App),
   store

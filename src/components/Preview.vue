@@ -42,7 +42,6 @@
           </label>
           {{ empObj.state }}
         </div>
-
         <div class="labels">
           <label>
             <b>Mobile Number:</b>

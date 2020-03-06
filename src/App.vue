@@ -46,7 +46,6 @@ export default {
 
 <style scoped>
 .registration {
-  /* background-color: #d3d3d3; */
   margin: 30px;
   padding: 1%;
   float: left;
