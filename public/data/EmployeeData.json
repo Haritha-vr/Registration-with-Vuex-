@@ -21,8 +21,19 @@
     "country": "India",
     "state": "Andhra Pradesh",
     "address": "Srikakulam 532443"
-}
-,
+},
+{
+    "firstname": "Sindhu",
+        "lastname": "Inuganti",
+        "email": "sindhusita@gmail.com",
+        "password": "cdlx@63",
+        "dob": "05-03-1999",
+        "gender": "Female",
+        "hobbies": ["Watching movies","Listening to music"],
+        "country": "India",
+        "state": "Andhra Pradesh",
+        "address": "Gajuwaka 530026"
+},
 {
     "firstname": "Neha",
         "lastname": "Gandhi",
