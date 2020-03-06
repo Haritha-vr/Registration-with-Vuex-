@@ -19,6 +19,9 @@ export default {
       ListComponent,
       Preview
   },
+  mounted() {
+    this.$store.dispatch("getEmployeeData");
+  }
   // computed: mapState({
   //   // 'count'
   //   count: x=>x.count,

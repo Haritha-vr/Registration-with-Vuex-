@@ -21,8 +21,7 @@
           <label>
             <b>DOB:</b>
           </label>
-          <!-- {{ printDate() }} -->
-          <!-- {{dob}} -->
+          {{empObj.dob.split("-").reverse().join("-")}}
         </div>
         <div class="labels">
           <label>
@@ -70,24 +69,13 @@
 </template>
 
 <script>
-// import { bus } from '../main.js'
-// import {Countries} from "./constants.js";
 export default {
   name: "Preview",
    computed:{
     empObj(){
       return this.$store.state.empObj 
     }
-  },
-//  methods:{
-//     fullname() {
-//       return this.firstname + " " + this.lastname;
-//     },
-//     printDate() {
-//       this.dob = this.dob.split("-").reverse().join("-");
-//       return this.dob;
-//     }
-//   }
+  }
  }
 </script>
 

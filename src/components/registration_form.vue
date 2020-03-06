@@ -45,7 +45,7 @@
           <label>Country</label>
         </div>
         <div class="field-values">
-          <select v-model="empObj.country" @change="getStates">
+          <select v-model="empObj.country" @change="getStates()">
             <option v-for="c in empObj.countryObj" :key="c.id">{{c.country}}</option>
           </select>
         </div>
@@ -54,6 +54,7 @@
         </div>
         <div class="field-values">
           <select v-model="empObj.state">
+          
             <option v-for="s in empObj.stateObj" :key="s">{{s}}</option>
           </select>
         </div>
@@ -92,7 +93,7 @@
 </template>
 <script>
 // import { bus } from '../main.js'
-import {Countries} from "./constants.js"
+// import {Countries} from "./constants.js"
 export default {
     name: "Registration",
   //    props:{
@@ -121,9 +122,13 @@ export default {
     //     this.hobbies = [],
     //     this.address = "";
     // },
+    
     getStates() {
-      var x = Countries.find(x => x.country == this.country);
-      this.stateObj = x.states;
+      // var x = Countries.find(x => x.country == this.country);
+      // this.$store.state.stateObj = x.states;
+     // console.log('1')
+      this.$store.dispatch('getStates');
+      //console.log('9')
     },
     resetForm(){
       this.$store.dispatch('reset');
